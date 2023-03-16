@@ -1,6 +1,6 @@
 {
   "name": "@onelastjedi/json2csv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JSON to CSV and back parsers",
   "homepage": "https://json2csv.phon.one",
   "repository": {
