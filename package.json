@@ -1,0 +1,33 @@
+{
+  "name": "@onelastjedi/json2csv",
+  "version": "1.0.0",
+  "description": "JSON to CSV and back parsers",
+  "homepage": "https://json2csv.phon.one",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onelastjedi/json2csv.git"
+  },
+  "keywords": [
+    "json",
+    "csv",
+    "json to csv",
+    "csv to json",
+    "parser",
+    "converter"
+  ],
+  "license": "ISC",
+  "author": {
+    "name": "J.D",
+    "url": "https://phon.one"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
