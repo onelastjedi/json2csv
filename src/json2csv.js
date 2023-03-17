@@ -1,4 +1,14 @@
-module.exports = function json2csv (data) {
+module.exports = json2csv
+
+/**
+ * Convert json2csv
+ *
+ * @param {*} data - Valid JS object
+ * @return {string} CSV string
+ *
+ * @example
+ */
+function json2csv (data) {
   if (
     !data || data.length === 0 ||
     Object.keys(data).length === 0
@@ -6,11 +16,12 @@ module.exports = function json2csv (data) {
     throw new Error('Unexpected input')
   }
 
-  const arr = Array.isArray(data) ? data : [data]
-  let fields
-  const columns = []
+  var arr = Array.isArray(data) ? data : [data]
+  var fields,
+      columns = []
+  ;
 
-  for (let i = 0; i < arr.length; ++i) {
+  for (var i = 0; i < arr.length; ++i) {
     fields = Object.keys(arr[i])
     columns.push(Object.values(arr[i]))
   }

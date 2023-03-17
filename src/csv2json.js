@@ -1,14 +1,25 @@
-const toPrimitive = require('./toPrimitive')
-module.exports = function csv2json (csv) {
-  const res = []
-  const arr = csv.split('\n')
-  const head = arr.slice(0, 1).join().split(',')
-  const tail = arr.slice(1, arr.length).map(x => x.split(','))
+/** @const {function} */
+var toPrimitive = require('./toPrimitive')
 
-  for (let i = 0; i < tail.length; ++i) {
-    const f = {}
+/**
+ * Convert csv to json
+ *
+ * @param {string} csv - Valid csv string
+ * @return {array}
+ *
+ * @example
+ */
+function csv2json (csv) {
+  var res = [],
+      arr = csv.split('\n'),
+      head = arr.slice(0, 1).join().split(','),
+      tail = arr.slice(1, arr.length).map(x => x.split(','))
+  ;
 
-    for (let n = 0; n < tail[i].length; ++n) {
+  for (var i = 0; i < tail.length; ++i) {
+    var f = {}
+
+    for (var n = 0; n < tail[i].length; ++n) {
       f[head[n]] = toPrimitive(tail[i][n])
     }
 
@@ -17,3 +28,5 @@ module.exports = function csv2json (csv) {
 
   return res
 }
+
+module.exports = csv2json
