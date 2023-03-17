@@ -1,6 +1,6 @@
 {
   "name": "@onelastjedi/json2csv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Parse JSON to CSV and vice versa in its simplest form",
   "homepage": "https://json2csv.phon.one",
   "repository": {
