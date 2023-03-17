@@ -15,7 +15,7 @@ If you use npm, `npm install @onelastjedi/json2csv`. You can also download the [
 ```js
 import parse from '@onelastjedi/json2csv'
 
-const csv = 'name,developer,age\Mary,true,25'
+const csv = 'name,developer,age\nMary,true,25'
 const json = { name: 'John', developer: false, age: 30 }
 
 parse.csv2json(csv) // [{ name: 'Mary', developer: true, age: 25}]
