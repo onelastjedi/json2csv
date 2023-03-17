@@ -1,3 +1,4 @@
+module.exports = toPrimitive
 /**
  *  Convert string to primitives
  *
