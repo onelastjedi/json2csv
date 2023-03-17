@@ -4,7 +4,7 @@
 
 # json2csv
 
-JavaScript library to transform JSON to CSV and back.
+JavaScript library to convert JSON to CSV and back. Has no dependencies. Only works with flat objects.
 
 ## Installing
 
