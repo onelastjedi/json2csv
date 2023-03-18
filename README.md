@@ -24,4 +24,4 @@ parse.json2csv(json) // name,developer,age\nJohn,false,30
 
 ### License
 
-[MIT](LICENSE)
+[ISC](LICENSE)
